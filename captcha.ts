@@ -1,4 +1,4 @@
-import { Captcha } from './types'; 
+import { Captcha } from './types';
 
 
 // prompt the use to only enter White -> Blue -> Red text in that order
@@ -16,8 +16,8 @@ export function createCaptcha(canvas: HTMLCanvasElement): string {
         captcha = captcha.concat(charsArray[index]);
     }
 
-    
-    addTextToImage('https://5.imimg.com/data5/GL/TG/MY-45342195/wall-textures.jpg', captcha, canvas);
+
+    addTextToImage('https://img.freepik.com/premium-photo/gray-gradient-wall-blank-studio-room-plain-studio-background_570543-5927.jpg', captcha, canvas);
     return captcha;
 }
 
@@ -69,7 +69,7 @@ function addTextToImage(imagePath: string, text: string, circle_canvas: HTMLCanv
         };
     }
 
-    
+
     else if (order == 1) {
         var text1 = text.substring(0, 3);
         var text2 = text.substring(3, 6);
@@ -78,19 +78,19 @@ function addTextToImage(imagePath: string, text: string, circle_canvas: HTMLCanv
             context.drawImage(img, 0, 0);
             context.lineWidth = 1;
             context.fillStyle = "#FFFFFF";
-            context.font = "25px bold courier";
+            context.font = "25px bold monospace";
             context.fillText(text1, 5, 35);
             context.fillStyle = "#FF0000";
-            context.font = "25px bold courier";
+            context.font = "25px bold monospace";
             context.fillText(text3, 70, shift1);
             context.fillStyle = "indigo";
-            context.font = "25px bold courier";
+            context.font = "25px bold monospace";
             context.fillText(text2, 140, shift2);
             context.fillStyle = "#00FF00";
-            context.font = "25px bold courier";
+            context.font = "25px bold monospace";
             context.fillText(rtext1, 10, shift2);
             context.fillStyle = "#FFFF00";
-            context.font = "25px bold courier";
+            context.font = "25px bold monospace";
             context.fillText(rtext2, 140, 40);
         };
 
@@ -103,19 +103,19 @@ function addTextToImage(imagePath: string, text: string, circle_canvas: HTMLCanv
             context.drawImage(img, 0, 0);
             context.lineWidth = 1;
             context.fillStyle = "#FF0000";
-            context.font = "25px bold courier";
+            context.font = "25px bold monospace";
             context.fillText(text3, 5, 35);
             context.fillStyle = "#FFFFFF";
-            context.font = "25px bold courier";
+            context.font = "25px bold monospace";
             context.fillText(text1, 70, shift1);
             context.fillStyle = "indigo";
-            context.font = "25px bold courier";
+            context.font = "25px bold monospace";
             context.fillText(text2, 140, shift2);
             context.fillStyle = "#00FF00";
-            context.font = "25px bold courier";
+            context.font = "25px bold monospace";
             context.fillText(rtext1, 10, shift2);
             context.fillStyle = "#FFFF00";
-            context.font = "25px bold courier";
+            context.font = "25px bold monospace";
             context.fillText(rtext2, 140, 40);
         };
 
@@ -128,19 +128,19 @@ function addTextToImage(imagePath: string, text: string, circle_canvas: HTMLCanv
             context.drawImage(img, 0, 0);
             context.lineWidth = 1;
             context.fillStyle = "indigo";
-            context.font = "25px bold courier";
+            context.font = "25px bold monospace";
             context.fillText(text2, 5, 35);
             context.fillStyle = "#FFFFFF";
-            context.font = "25px bold courier";
+            context.font = "25px bold monospace";
             context.fillText(text1, 70, shift1);
             context.fillStyle = "#FF0000";
-            context.font = "25px bold courier";
+            context.font = "25px bold monospace";
             context.fillText(text3, 140, shift2);
             context.fillStyle = "#00FF00";
-            context.font = "25px bold courier";
+            context.font = "25px bold monospace";
             context.fillText(rtext1, 10, shift2);
             context.fillStyle = "#FFFF00";
-            context.font = "25px bold courier";
+            context.font = "25px bold monospace";
             context.fillText(rtext2, 140, 40);
         };
 
@@ -153,19 +153,19 @@ function addTextToImage(imagePath: string, text: string, circle_canvas: HTMLCanv
             context.drawImage(img, 0, 0);
             context.lineWidth = 1;
             context.fillStyle = "indigo";
-            context.font = "25px bold courier";
+            context.font = "25px bold monospace";
             context.fillText(text2, 5, 35);
             context.fillStyle = "#FF0000";
-            context.font = "25px bold courier";
+            context.font = "25px bold monospace";
             context.fillText(text3, 70, shift1);
             context.fillStyle = "#FFFFFF";
-            context.font = "25px bold courier";
+            context.font = "25px bold monospace";
             context.fillText(text1, 140, shift2);
             context.fillStyle = "#00FF00";
-            context.font = "25px bold courier";
+            context.font = "25px bold monospace";
             context.fillText(rtext1, 10, shift2);
             context.fillStyle = "#FFFF00";
-            context.font = "25px bold courier";
+            context.font = "25px bold monospace";
             context.fillText(rtext2, 140, 40);
         };
 
@@ -178,19 +178,19 @@ function addTextToImage(imagePath: string, text: string, circle_canvas: HTMLCanv
             context.drawImage(img, 0, 0);
             context.lineWidth = 1;
             context.fillStyle = "#FF0000";
-            context.font = "25px bold courier";
+            context.font = "25px bold monospace";
             context.fillText(text3, 5, 35);
             context.fillStyle = "indigo";
-            context.font = "25px bold courier";
+            context.font = "25px bold monospace";
             context.fillText(text2, 70, shift1);
             context.fillStyle = "#FFFFFF";
-            context.font = "25px bold courier";
+            context.font = "25px bold monospace";
             context.fillText(text1, 140, shift2);
             context.fillStyle = "#00FF00";
-            context.font = "25px bold courier";
+            context.font = "25px bold monospace";
             context.fillText(rtext1, 10, shift2);
             context.fillStyle = "#FFFF00";
-            context.font = "25px bold courier";
+            context.font = "25px bold monospace";
             context.fillText(rtext2, 140, 40);
         };
 
